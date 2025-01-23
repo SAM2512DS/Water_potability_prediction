@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>WATER POTABILITY PREDICTION </title>
+</head>
+
+    <body class="main" style= "background-image: url(/static/rslt.jpg);
+                               background-size: cover;
+                               background-repeat: no-repeat;">
+
+
+        <center style="margin-top:250px; color: rgb(16, 1, 1);" >
+            <h1 style="font-size: 30px;
+                       
+                       text-decoration: underline;"> YOUR PREDICTION </h1>
+    
+   <h2> Drinking water is the most precious resource on Earth.</h2>
+
+   <h4><p> Drinking water is the most precious resource on Earth. In the past few decades, the quality of drinking water has significantly degraded due to pollution. <br>Water quality assessment is paramount for the well-being of the people since the presence of pollutants can have serious health issues.
+     <br>Particularly, in developing countries such as India, water is not properly assessed for its quality.
+     <br>This work uses machine learning techniques to predict the water quality of Indian rivers.</p></h4>
+{% if data == 0 %}
+<h1>Happy to say The water is drinkable</h1>
+
+{% elif data == 1 %}
+<h1>Water is not drinkable</h1>
+
+{% else %}
+<h1>Your values has error in prediction</h1>
+{% endif %}
+</center>
+</body>
+</html>

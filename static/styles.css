@@ -1,0 +1,82 @@
+body
+{
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+ background-image:url(/static/wt.jpg);
+}
+
+label{
+    margin-left:30px;
+    color:rgb(17, 1, 1);
+
+}
+
+select{
+    padding: 1px 5px;
+    margin-top: 15px;
+    border: 2px solid #0b0000ea ;
+    cursor: pointer;
+}
+
+p
+{
+    margin-left:30px;
+    color:rgb(17, 1, 1);
+}
+
+h1
+{
+    background-color:rgb(150, 105, 9);
+}
+.btn{
+   color: black;
+    font-size: 20px;
+    height: 30px;
+    width: 105px;
+    border: none;
+   margin: 8px;
+   transition: .2s ease;
+   cursor: pointer;
+   text-align: center;
+}
+.btn1{
+    color: black;
+    font-size: 18px;
+    height: 30px;
+    width: 105px;
+    border: none;
+   margin: 8px;
+   transition: .2s ease;
+   cursor: pointer;
+   text-align: center;
+}
+
+.btn:hover{
+    background-color: rgb(225, 37, 37);
+    color: rgb(41, 6, 111);
+}
+.btn1:hover:hover{
+    background-color: rgb(225, 37, 37);
+    color:rgb(41, 6, 111);
+}
+@media screen  and (max-width:1142px){
+    input{
+        display: block;
+    }
+    label{
+        display: block;
+        margin: auto;
+        padding-top: 30px;
+    }
+}
+
+@media screen  and (max-width:936px){
+   
+    input{
+        display: block;
+    }
+    .sec1 > select{
+        display: block;
+    }
+}

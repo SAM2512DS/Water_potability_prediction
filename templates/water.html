@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>WATER POTABILITY PREDICTION</title>
+   <link rel="stylesheet" href="static/styles.css">
+</head>
+
+<body>
+   <center>
+      <br><br>
+      <h1> WATER POTABILITY PREDICTION</h1>
+      <p>This web application is made to predict weather the water has to drinkable or not with the given parameter below</p>
+      <p> Fill the parameters and get your Results.</p>
+      <br>
+      
+      <form class="form-inline" action="/pred" method='POST'>
+         <label for="ph">ph Value</label>
+         <input class="form-control" type="number" step="any" name="ph">
+
+         <label for="FTI">Hardness Value</label>
+         <input class="form-control" type="number" step="any" name="Hardness">
+
+         <label for="Solids"> Solids Value</label>
+         <input class="form-control" type="number" step="any" name="Solids">
+
+         <label for="Chloramines"> Chloramines Value</label>
+         <input class="form-control" type="number" step="any" name="Chloramines">
+       
+         <label for="Sulfate"> Sulfate Value</label>
+         <input class="form-control" type="number" step="any" name="Sulfate">
+         <label for="Conductivity"> Conductivity Value</label>
+         <input class="form-control" type="number" step="any" name="Conductivity">
+         <label for="Organic_carbon"> Sulfate Value</label>
+         <input class="form-control" type="number" step="any" name="Organic_carbon">
+         <label for="Trihalomethanes"> Trihalomethanes Value</label>
+         <input class="form-control" type="number" step="any" name="Trihalomethanes">
+         <label for="Turbidity"> Turbidity Value</label>
+         <input class="form-control" type="number" step="any" name="Turbidity">
+            
+      
+         <br><br <br><br>
+
+         <p> Fill all values, Click "Predict" for prediction on your
+            values</p>
+         <div>
+            <input class="btn" type="submit" value="Predict" style="margin-left:30px;">
+            <input  class="btn1" type="reset" value="Reset value" style="margin-left:30px;">
+         </div>
+      </form>
+   </center>
+</body>
+
+</html>
+           
